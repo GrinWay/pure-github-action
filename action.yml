@@ -1,0 +1,15 @@
+name: pure-github-action
+description: It's a pure github action sample
+author: Grigory Koblitskiy
+
+#inputs:
+
+outputs:
+    status:
+        description: |
+            if you get 'ok' when run steps.<this-action-step-id>.outputs.status
+            means that action works
+
+runs:
+  using: node12
+  main: 'dist/index.js'
